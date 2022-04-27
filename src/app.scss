@@ -1,0 +1,26 @@
+// VARIABLES
+$fontSize: 16px;
+$mainFont: 'Barlow', sans-serif;
+$backgroundColor: #ffffff;
+$blackColor: #0e0e0e;
+
+// GENERAL 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: $mainFont;
+    font-size: $fontSize;
+    font-weight: 300;
+    background-color: $backgroundColor;
+
+    body {
+        line-height: 1.8;
+        color: $blackColor;
+    }
+}
