@@ -18,7 +18,7 @@ let data = [
                 name: 'Sidi Ali pack',
                 quantity: 1,
                 price: 500,
-                isBought: true,
+                isBought: true, 
             }
         ]
     }
