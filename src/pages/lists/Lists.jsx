@@ -1,8 +1,33 @@
+import { FaFile, FaCheck } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './lists.scss';
 
-const Lists = () => {
+
+const Lists = ( { lists } ) => {
   return (
-    <div>Lists</div>
+    <ul className="shopping-lists">
+      {
+        lists.map( ( list ) => {
+          return  <li key={ list.id }>
+                    <div className="shopping-list_header">
+                      <h2 className="shopping-list_heading">
+                        <Link to={`/list-${list.id}`}>
+                          <FaFile /> { list.name }
+                        </Link>
+                      </h2>
+                      <div className="shopping-list_control">
+                        <FaCheck />
+                      </div>
+                    </div>
+                    <div className="shopping-list_details">
+                    <h4 className='shopping-list_total'>Total: { list.total }DH</h4>
+                      <h4 className='shopping-list_date'>Date: { list.date } </h4>
+                    </div>
+                  </li> 
+        })
+      }
+      
+    </ul>
   )
 }
 
