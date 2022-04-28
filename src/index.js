@@ -19,7 +19,7 @@ ReactDom.createRoot(rootElem).render(
       <Route path="/" element={<App />} />
       <Route path="lists" element={<Lists />} />
       <Route path="creat-shoping-list" element={<ListsForm />} />
-      <Route path="list-:id" element={<List />} />
+      <Route path="list/:id" element={<List />} />
       <Route path="add-shopping-items" element={<ItemsForm />} />
       <Route path="*" element={<NotFound />} />
     </Routes>

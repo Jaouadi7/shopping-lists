@@ -1,4 +1,4 @@
-import { FaFile, FaCheck } from 'react-icons/fa';
+import { ImFileEmpty, ImCheckmark } from "react-icons/im";
 import { Link } from 'react-router-dom';
 import './lists.scss';
 
@@ -11,12 +11,12 @@ const Lists = ( { lists } ) => {
           return  <li key={ list.id }>
                     <div className="shopping-list_header">
                       <h2 className="shopping-list_heading">
-                        <Link to={`/list-${list.id}`}>
-                          <FaFile /> { list.name }
+                        <Link to={`/list/${list.id}`}>
+                          <ImFileEmpty /> { list.name }
                         </Link>
                       </h2>
                       <div className="shopping-list_control">
-                        <FaCheck />
+                        <ImCheckmark />
                       </div>
                     </div>
                     <div className="shopping-list_details">
