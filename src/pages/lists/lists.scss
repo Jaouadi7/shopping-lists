@@ -1,0 +1,26 @@
+.shopping-lists {
+    .shopping-list_item {
+        border-bottom: 1px solid #E6E2E2;
+
+        .shopping-list_heading {
+            font-size: 18px;
+            .icon {
+                color: #707070;
+            }
+        }
+
+        .shopping-list_details {
+            h4 {
+                font-size: 13px;
+            }
+        }
+
+        .shopping-list_control {
+            .icon {
+                color: #E1E4E8;
+            }
+        }
+
+    }
+    
+}

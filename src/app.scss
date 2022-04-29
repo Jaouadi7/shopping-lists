@@ -3,6 +3,7 @@ $fontSize: 16px;
 $mainFont: 'Barlow', sans-serif;
 $backgroundColor: #ffffff;
 $blackColor: #0e0e0e;
+$primaryColor: #7868E6;
 
 // GENERAL 
 *,
@@ -22,5 +23,10 @@ html {
     body {
         line-height: 1.8;
         color: $blackColor;
+
+        .app-title {
+            color: $primaryColor;
+            font-weight: 500;
+        }
     }
 }
