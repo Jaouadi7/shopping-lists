@@ -1,0 +1,32 @@
+$primaryColor: #7868E6;
+
+.shopping-lists_stats {
+
+    h2 {
+        letter-spacing: -0.3px;
+        font-size: 1.25rem !important;
+    }
+
+    .stats-details {
+        flex-wrap: wrap;
+        .stats-item {
+            width: 49%;
+            border: 1px solid $primaryColor;
+            color: $primaryColor;
+
+            h3 {
+                font-weight: 500;
+                font-size: 1rem;
+            }
+
+            h4 {
+
+            }
+        }
+
+        .today {
+            background: $primaryColor;
+            color: #fff;
+        }
+    }
+}

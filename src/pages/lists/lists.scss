@@ -1,5 +1,9 @@
+$primaryColor: #7868E6;
+
 .shopping-lists {
+    min-height: 65vh;
     .shopping-list_item {
+        overflow-y: scroll;
         border-bottom: 1px solid #E6E2E2;
 
         .shopping-list_heading {
@@ -17,10 +21,30 @@
 
         .shopping-list_control {
             .icon {
-                color: #E1E4E8;
+                color: #d3d3d3;
             }
         }
 
+    }
+
+    .completed {
+
+        .shopping-list_heading {
+            text-decoration: line-through;
+            a,
+            .icon {
+                color: #A09BC4 !important;
+            }
+
+        }
+       
+        .shopping-list_details {
+            color: #A09BC4 !important;
+        }
+
+        .shopping-list_control .icon.isCompleted {
+            color: $primaryColor;
+        }
     }
     
 }

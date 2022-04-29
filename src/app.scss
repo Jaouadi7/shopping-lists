@@ -1,6 +1,6 @@
 // VARIABLES
 $fontSize: 16px;
-$mainFont: 'Barlow', sans-serif;
+$mainFont: "Barlow", sans-serif;
 $backgroundColor: #ffffff;
 $blackColor: #0e0e0e;
 $primaryColor: #7868E6;
@@ -15,15 +15,17 @@ $primaryColor: #7868E6;
 }
 
 html {
-    font-family: $mainFont;
     font-size: $fontSize;
     font-weight: 300;
     background-color: $backgroundColor;
+    overflow: hidden;
 
     body {
         line-height: 1.8;
         color: $blackColor;
-
+        overflow: hidden;
+        font-family: $mainFont;
+        
         .app-title {
             color: $primaryColor;
             font-weight: 500;
