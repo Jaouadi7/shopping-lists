@@ -17,8 +17,8 @@ const List = () => {
   return (
     <>
       <div className="shopping-list p-5">
-        <h1 className='app-title title is-size-5'>{currentList[0].name}</h1>
-        <ul className='shopping-lists'>
+        <h1 className='app-title title'>{currentList[0].name}</h1>
+        <ul className='shopping-lists active-list'>
           {
             currentList[0].items.map( ( list ) => {
               return (

@@ -29,6 +29,7 @@ html {
         .app-title {
             color: $primaryColor;
             font-weight: 500;
+            font-size: 1.45rem;
         }
     }
 }
@@ -52,10 +53,21 @@ html {
         color: #A09BC4 !important;
     }
 
-    .shopping-list_control .icon.isCompleted {
-        color: $primaryColor !important;
+
+    
+}
+
+.active-list {
+    .shopping-list_control .icon {
+        color: #b1afc1;
+    }
+    .completed {
+        .shopping-list_control .isCompleted  {
+            color: $primaryColor;
+        }
     }
 }
+
 
 button.primaryBtn {
     background-color: $primaryColor;

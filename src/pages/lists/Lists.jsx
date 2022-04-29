@@ -1,4 +1,4 @@
-import { ImFileEmpty, ImCheckmark, ImPencil } from "react-icons/im";
+import { ImFileEmpty, ImCheckmark, ImPencil, ImBin } from "react-icons/im";
 import { Link } from 'react-router-dom';
 import './lists.scss';
 import Stats from "../../components/Stats/Stats";
@@ -21,12 +21,25 @@ const Lists = ( { lists } ) => {
                           </Link>
                         </h2>
                         <div className="shopping-list_control">
-                        <span className="icon mr-2">
-                            <ImPencil  />
-                          </span>
-                          <span className="icon isCompleted">
-                            <ImCheckmark  />
-                          </span>
+
+                         <button className={`button is-small mr-1 isCompleted ${list.isCompleted && 'is-success'}` }>
+                            <span className="icon ">
+                              <ImCheckmark  />
+                            </span>
+                          </button>
+
+                          <button className="button is-small is-warning mr-1">
+                            <span className="icon ">
+                              <ImPencil  />
+                            </span>
+                          </button>
+                        
+                          <button className="button is-small is-danger">
+                            <span className="icon ">
+                              <ImBin  />
+                            </span>
+                          </button>
+
                         </div>
                       </div>
                       <div className="shopping-list_details is-flex">

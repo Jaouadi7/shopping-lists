@@ -16,7 +16,10 @@ const App = ( ) => {
             {
                 shoppingLists.length > 0 ? (
                     <>
-                        <h1 className='app-title title is-size-5'>Shopping Lists ( { shoppingLists.length } )</h1>
+                        <header className='is-flex is-justify-content-space-between'>
+                            <h1 className='app-title title mb-6'>Shopping Lists ( { shoppingLists.length } )</h1>
+                            <button className='button is-small new-list-btn'> New List </button>
+                        </header>
                         <Lists lists={ shoppingLists } /> 
                     </>
                 ) :
