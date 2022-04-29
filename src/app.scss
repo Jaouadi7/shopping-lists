@@ -73,7 +73,6 @@ button.primaryBtn {
     background-color: $primaryColor;
     color: #fff;
     font-size: 1.1rem !important;
-    padding-block: 25px !important;
     &:hover {
         color: #fff;
     }
@@ -83,4 +82,9 @@ button {
     font-family: $mainFont;
     cursor: pointer;
     font-weight: 500;
+    border: none;
+}
+
+.button {
+    border: none;
 }

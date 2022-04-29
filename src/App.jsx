@@ -4,6 +4,7 @@ import './app.scss';
 import { getLists } from './data/Data';
 import Lists from './pages/lists/Lists';
 import Welcome from './pages/no-lists/Welcome';
+import { Link } from 'react-router-dom';
 
 // ---------------  APP COMPONENT ---------------- //
 const App = ( ) => {
@@ -18,7 +19,7 @@ const App = ( ) => {
                     <>
                         <header className='is-flex is-justify-content-space-between'>
                             <h1 className='app-title title mb-6'>Shopping Lists ( { shoppingLists.length } )</h1>
-                            <button className='button is-small new-list-btn'> New List </button>
+                            <Link to={'/creat-shoping-list'} className='button is-small new-list-btn'> New List </Link>
                         </header>
                         <Lists lists={ shoppingLists } /> 
                     </>

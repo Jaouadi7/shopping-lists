@@ -1,0 +1,15 @@
+$primaryColor: #7868E6;
+
+.shopping-lists_welcome {
+    height: 100vh;
+    h1 {
+        font-family: Amin;
+        color: $primaryColor;
+    }
+
+    .button {
+        background-color: $primaryColor;
+        color: #fff;
+        border: none;
+    }
+}

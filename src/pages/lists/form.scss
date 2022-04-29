@@ -1,0 +1,21 @@
+$primaryColor: #7868E6;
+$mainFont: "Barlow", sans-serif;
+
+.shopping-list-form {
+
+    .create-list-form {
+        height: 100vh;
+
+        .field {
+            .label {
+                color: $primaryColor;
+                font-weight: 500;
+            }
+
+            .input {
+                border: 1px solid $primaryColor;
+                font-family: $mainFont;
+            }
+        }
+    }
+}
