@@ -27,24 +27,5 @@ $primaryColor: #7868E6;
 
     }
 
-    .completed {
-
-        .shopping-list_heading {
-            text-decoration: line-through;
-            a,
-            .icon {
-                color: #A09BC4 !important;
-            }
-
-        }
-       
-        .shopping-list_details {
-            color: #A09BC4 !important;
-        }
-
-        .shopping-list_control .icon.isCompleted {
-            color: $primaryColor;
-        }
-    }
     
 }

@@ -32,3 +32,43 @@ html {
         }
     }
 }
+
+
+// SHOPPING LIST
+.completed {
+
+    .shopping-list_heading {
+        text-decoration: line-through;
+        color: #A09BC4 !important;
+
+        a,
+        .icon {
+            color: #A09BC4 !important;
+        }
+
+    }
+   
+    .shopping-list_details {
+        color: #A09BC4 !important;
+    }
+
+    .shopping-list_control .icon.isCompleted {
+        color: $primaryColor !important;
+    }
+}
+
+button.primaryBtn {
+    background-color: $primaryColor;
+    color: #fff;
+    font-size: 1.1rem !important;
+    padding-block: 25px !important;
+    &:hover {
+        color: #fff;
+    }
+}
+
+button {
+    font-family: $mainFont;
+    cursor: pointer;
+    font-weight: 500;
+}
