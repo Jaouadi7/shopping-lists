@@ -16,8 +16,8 @@ const List = () => {
   const backHomePage = ( ) => navigate('/');
   return (
     <>
-      <div className="shopping-list p-5">
-        <h1 className='app-title title'>{currentList[0].name}</h1>
+      <div className="shopping-list">
+        <h1 className='primary-title title'>{currentList[0].name}</h1>
         <ul className='shopping-lists active-list'>
           {
             currentList[0].items.map( ( list ) => {
@@ -42,7 +42,7 @@ const List = () => {
         </ul>
       </div>
       <div className="back-btn m-5">
-        <button className='button is-uppercase primaryBtn is-fullwidth' onClick={backHomePage}>Back</button>
+        <button className='button is-uppercase primary-button is-fullwidth' onClick={backHomePage}>Back</button>
       </div>
     </>
   )

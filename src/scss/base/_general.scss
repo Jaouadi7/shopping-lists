@@ -1,0 +1,24 @@
+// GENERAL 
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $fontSize;
+    font-weight: 300;
+    background-color: $backgroundColor;
+    overflow: hidden;
+
+    body {
+        line-height: 1.8;
+        color: $blackColor;
+        overflow: hidden;
+        font-family: $mainFont;
+        
+       
+    }
+}

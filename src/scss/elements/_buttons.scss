@@ -1,0 +1,20 @@
+button {
+    font-family: $mainFont;
+    cursor: pointer;
+}
+
+
+.primary-button {
+    background-color: $primaryColor;
+    color: $whiteColor;
+    transition: all .3s ease-in-out;
+    
+    &:hover {
+        background-color: $lightPrimaryColor;
+        color: $whiteColor;
+    }
+}
+
+.has-no-border {
+    border: none;
+}

@@ -1,61 +1,5 @@
-// VARIABLES
-$fontSize: 16px;
-$mainFont: "Barlow", sans-serif;
-$backgroundColor: #ffffff;
-$blackColor: #0e0e0e;
-$primaryColor: #7868E6;
-
-// GENERAL 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: $fontSize;
-    font-weight: 300;
-    background-color: $backgroundColor;
-    overflow: hidden;
-
-    body {
-        line-height: 1.8;
-        color: $blackColor;
-        overflow: hidden;
-        font-family: $mainFont;
-        
-        .app-title {
-            color: $primaryColor;
-            font-weight: 500;
-            font-size: 1.45rem;
-        }
-    }
-}
 
 
-// SHOPPING LIST
-.completed {
-
-    .shopping-list_heading {
-        text-decoration: line-through;
-        color: #A09BC4 !important;
-
-        a,
-        .icon {
-            color: #A09BC4 !important;
-        }
-
-    }
-   
-    .shopping-list_details {
-        color: #A09BC4 !important;
-    }
-
-
-    
-}
 
 .active-list {
     .shopping-list_control .icon {
@@ -69,22 +13,4 @@ html {
 }
 
 
-button.primaryBtn {
-    background-color: $primaryColor;
-    color: #fff;
-    font-size: 1.1rem !important;
-    &:hover {
-        color: #fff;
-    }
-}
 
-button {
-    font-family: $mainFont;
-    cursor: pointer;
-    font-weight: 500;
-    border: none;
-}
-
-.button {
-    border: none;
-}

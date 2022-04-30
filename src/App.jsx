@@ -1,10 +1,9 @@
-// --------------- IMPORT FILES ------------------ //
-import 'bulma/css/bulma.css';
-import './app.scss';
-import { getLists } from './data/Data';
+import './scss/app.scss'; // CORE STYLE
+import { getLists } from './data/Data'; // STATIC SHOPPING LISTS DATA
+import Header from './components/layouts/Header'; // HEADER COMPONENT
+
 import Lists from './pages/lists/Lists';
 import Welcome from './pages/no-lists/Welcome';
-import { Link } from 'react-router-dom';
 
 // ---------------  APP COMPONENT ---------------- //
 const App = ( ) => {
@@ -12,16 +11,13 @@ const App = ( ) => {
     let shoppingLists = getLists();
 
     return (
-        <div id="shoping-list-app" className='p-5'>
+        <div id="shopping-list_application">
             <div className="container">
             {
                 shoppingLists.length > 0 ? (
                     <>
-                        <header className='is-flex is-justify-content-space-between'>
-                            <h1 className='app-title title mb-6'>Shopping Lists ( { shoppingLists.length } )</h1>
-                            <Link to={'/creat-shoping-list'} className='button is-small new-list-btn'> New List </Link>
-                        </header>
-                        <Lists lists={ shoppingLists } /> 
+                       <Header shoppingListsCounter={shoppingLists.length} />
+                       <Lists lists={ shoppingLists } /> 
                     </>
                 ) :
                 <Welcome />

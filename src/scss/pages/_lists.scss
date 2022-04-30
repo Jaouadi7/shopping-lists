@@ -1,0 +1,33 @@
+.lists {
+    min-height: 63vh;
+
+    .shopping-list_item {
+        .isCompleted.false {
+            color: #ccc;
+            border: 1px solid #bbb;
+        }
+    }
+}
+
+.shopping-lists {
+    .shopping-list_item {
+        border-bottom: 1px solid #E6E2E2;
+    }
+
+    .shopping-list_item.completed {
+
+        .shopping-list_details {
+            color: #A09BC4 ;
+        }
+
+        .shopping-list_heading {
+            color: #A09BC4;
+            text-decoration: line-through;
+
+            a {
+                color: #A09BC4 !important;
+            }
+    
+        }
+    }
+}

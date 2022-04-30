@@ -3,7 +3,7 @@ import './form.scss';
 
 const ListsForm = () => {
   return (
-    <div className="shopping-list-form p-5 ">
+    <div className="shopping-list-form">
       <form className='create-list-form is-flex is-align-items-stretch is-justify-content-center is-flex-direction-column'>
         <div className="field">
           <div className="control">
@@ -18,7 +18,7 @@ const ListsForm = () => {
           </div>
         </div>
         <div className="buttons">
-          <button className='button is-uppercase primaryBtn is-fullwidth'>Add items</button>
+          <button className='button is-uppercase primary-button is-fullwidth'>Add items</button>
           <Link to={'/'} className='button is-uppercase cancleBtn is-fullwidth'>Cancel</Link>
         </div>
       </form>

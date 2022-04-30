@@ -1,29 +1,21 @@
-import './stats.scss';
+import Card from "../elements/Card" // CARD COMPONENT
 
 const Stats = () => {
-  return (
-    <div className='shopping-lists_stats'>
-        <h2 className='title app-title mb-3'>You Spent:</h2>
-        <div className="stats-details is-flex is-justify-content-space-between">
-            <div className="stats-item today box is-shadowless p-3 mb-3">
-                <h3>Today</h3>
-                <h4>1040,00 DH</h4>
-            </div>
-            <div className="stats-item yesterday  box is-shadowless p-3 mb-3">
-                <h3>Yesterday</h3>
-                <h4>1040,00 DH</h4>
-            </div>
-            <div className="stats-item week  box is-shadowless p-3 mb-3">
-                <h3>This Week</h3>
-                <h4>1040,00 DH</h4>
-            </div>
-            <div className="stats-item month  box is-shadowless p-3 mb-3">
-                <h3>This Month</h3>
-                <h4>1040,00 DH</h4>
+    return (
+        <div className='shopping-lists_stats'>
+            <div className="container">
+                <div className="p-4">
+                    <h2 className='title primary-title heading-4 mb-4'>You Spent:</h2>
+                    <div className="stats-details is-flex is-justify-content-space-between is-flex-wrap-wrap">
+                        <Card classes="today stats-item" title='Today' total='1040,00 DH' />
+                        <Card classes="yesterday stats-item" title='Yesterday' total='1040,00 DH' />
+                        <Card classes="week stats-item" title='This Week' total='1040,00 DH' />
+                        <Card classes="month stats-item" title='This Month' total='1040,00 DH' />
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Stats

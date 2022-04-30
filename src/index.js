@@ -14,14 +14,16 @@ const rootElem = document.getElementById('root');
 
 // --------------- VARIABLES -------------------- //
 ReactDom.createRoot(rootElem).render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="lists" element={<Lists />} />
-      <Route path="creat-shoping-list" element={<ListsForm />} />
-      <Route path="list/:id" element={<List />} />
-      <Route path="add-shopping-items" element={<ItemsForm />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="lists" element={<Lists />} />
+        <Route path="creat-shoping-list" element={<ListsForm />} />
+        <Route path="list/:id" element={<List />} />
+        <Route path="add-shopping-items" element={<ItemsForm />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
