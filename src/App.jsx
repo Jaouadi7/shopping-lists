@@ -10,7 +10,7 @@ const App = ({ shoppingLists }) => {
         <div id="shopping-list_application">
             <div className="container">
                 {
-                    shoppingLists.length > 0 ? (
+                    shoppingLists.length > 3 ? (
                         <>
                             <Header shoppingListsCounter={shoppingLists.length} />
                             <Lists lists={shoppingLists} />

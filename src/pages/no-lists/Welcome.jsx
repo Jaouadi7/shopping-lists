@@ -1,4 +1,3 @@
-import './welcome.scss';
 import Logo from '../../images/logo.png'
 import { Link } from 'react-router-dom';
 import { ImArrowRight2 } from 'react-icons/im';
@@ -11,11 +10,11 @@ const Welcome = () => {
       </figure>
       <h1 className='shopping-lists_title is-size-2'>Shopping List</h1>
       <h3 className='subtitle'>Make your shopping More easier</h3>
-      <Link className='button' to={'/creat-shoping-list'}>
-         <span>Let's create a list</span>
-         <span className='icon'>
-           <ImArrowRight2 />
-         </span>
+      <Link className='button has-no-border has-text-weight-semibold' to={'/creat-shoping-list'}>
+        <span>Let's create a list</span>
+        <span className='icon'>
+          <ImArrowRight2 />
+        </span>
       </Link>
     </div>
   )
