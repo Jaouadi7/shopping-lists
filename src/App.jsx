@@ -1,31 +1,31 @@
 import './scss/app.scss'; // CORE STYLE
-import { getLists } from './data/Data'; // STATIC SHOPPING LISTS DATA
 import Header from './components/layouts/Header'; // HEADER COMPONENT
-
-import Lists from './pages/lists/Lists';
-import Welcome from './pages/no-lists/Welcome';
+import Lists from './pages/lists/Lists'; // SHOPPING LISTS  COMPONENT TO DISPLAY DATA
+import Welcome from './pages/no-lists/Welcome'; // DISPLAY WELCOME COMPONENT PAGE WHEN WE WILL NOT HAVE SHOPPING LISTS
 
 // ---------------  APP COMPONENT ---------------- //
-const App = ( ) => {
-
-    let shoppingLists = getLists();
+const App = ({ shoppingLists }) => {
 
     return (
         <div id="shopping-list_application">
             <div className="container">
-            {
-                shoppingLists.length > 0 ? (
-                    <>
-                       <Header shoppingListsCounter={shoppingLists.length} />
-                       <Lists lists={ shoppingLists } /> 
-                    </>
-                ) :
-                <Welcome />
-            }
+                {
+                    shoppingLists.length > 0 ? (
+                        <>
+                            <Header shoppingListsCounter={shoppingLists.length} />
+                            <Lists lists={shoppingLists} />
+                        </>
+                    ) :
+                        <Welcome />
+                }
             </div>
-           
+
         </div>
     )
 }
 
 export default App;
+
+
+
+

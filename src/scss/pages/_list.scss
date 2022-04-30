@@ -1,3 +1,16 @@
 .list {
+    height: 90vh;
 
+    .shopping-list_item {
+        .shopping-list_control {
+            color: #d8d3f5;
+        }
+    }
+
+    .shopping-list_item.completed {
+        .shopping-list_control {
+            color: $primaryColor;
+        }
+    }
+    
 }

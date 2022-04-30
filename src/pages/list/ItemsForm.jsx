@@ -1,4 +1,3 @@
-import './form.scss';
 
 const ItemsForm = () => {
   return (
