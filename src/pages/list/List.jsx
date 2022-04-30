@@ -37,7 +37,11 @@ const List = ({ shoppingLists }) => {
       </div>
 
       <div className="back-btn m-5">
-        <button className='button is-uppercase primary-button is-fullwidth' onClick={backHomePage}>Back</button>
+        <div className="container">
+          <div className="p-4">
+            <button className='button is-uppercase primary-button is-fullwidth' onClick={backHomePage}>Back</button>
+          </div>
+        </div>
       </div>
     </>
   )
