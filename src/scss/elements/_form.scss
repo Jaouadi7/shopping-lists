@@ -1,0 +1,27 @@
+.label {
+    color: $primaryColor;
+    font-weight: 500;
+}
+
+.input {
+    border: 1px solid $primaryColor;
+    font-family: $mainFont;
+}
+
+.create-list-form {
+    height: 100vh;
+}
+
+.errorMsg {
+    display: none;
+}
+
+input:invalid[focused=true] {
+    outline: none;
+    border: 1px solid #f78585;
+    color: #f92a2a
+}
+
+input:invalid[focused=true] ~ small.errorMsg {
+    display: block;
+} 

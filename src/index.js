@@ -2,7 +2,7 @@
 import React from 'react';
 import * as ReactDom from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from 'react'; // USE STATS HOOK
+import { useState, useEffect } from 'react'; // USE STATS HOOK
 import { getLists } from './data/Data'; // STATIC SHOPPING LISTS DATA
 
 // APPLICATION COMPONENTS
@@ -26,7 +26,10 @@ const ShoppingListsApplication = () => {
         <Routes>
           <Route path="/" element={<App shoppingLists={lists} />} />
           <Route path="lists" element={<Lists />} />
-          <Route path="creat-shoping-list" element={<ListsForm />} />
+          <Route
+            path="creat-shoping-list"
+            element={<ListsForm lists={lists} setLists={setLists} />}
+          />
           <Route path="list/:id" element={<List shoppingLists={lists} />} />
           <Route path="add-shopping-items" element={<ItemsForm />} />
           <Route path="*" element={<NotFound />} />
