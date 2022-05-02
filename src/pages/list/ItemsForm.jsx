@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import Header from "./content/Header";
-import { ImSad, ImPen } from "react-icons/im"
+import { ImSad, ImBin } from "react-icons/im"
 
 
 const ItemsForm = ({ lists, setLists }) => {
@@ -34,7 +34,7 @@ const ItemsForm = ({ lists, setLists }) => {
 
                         <div className="shopping-list_control">
                           <span className="icon delete-item ">
-                            <ImPen />
+                            <ImBin />
                           </span>
                         </div>
                       </div>
