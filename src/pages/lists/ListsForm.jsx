@@ -65,7 +65,7 @@ const ListsForm = ({ lists, setLists }) => {
     // ADD NEW LIST TO THE OTHER LISTS
     setLists([...lists, list]);
 
-    setTimeout(() => { navigate('/lists/add-items') }, 500);
+    setTimeout(() => { navigate(`/list/${id}/add-shopping-items`) }, 500);
 
   };
 

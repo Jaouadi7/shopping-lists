@@ -31,3 +31,15 @@
         }
     }
 }
+
+.shopping-lists_items {
+
+    .shopping-list_item {
+        border-bottom: 1px solid #E6E2E2;
+    }
+
+    .delete-item {
+        color: $primaryColor;
+    }
+
+}
