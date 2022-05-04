@@ -1,7 +1,7 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import Header from "./content/Header";
-import { ImSad, ImBin, ImInsertTemplate } from "react-icons/im"
-import { useEffect, useState } from "react";
+import { ImSad, ImBin } from "react-icons/im"
+import { useState } from "react";
 
 
 const ItemsForm = ({ lists, setLists }) => {
