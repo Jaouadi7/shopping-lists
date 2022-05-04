@@ -10,7 +10,7 @@ const List = ({ list }) => {
                 <ListControl isCompleted={list.isCompleted} />
             </div>
             <div className="shopping-list_details is-flex heading-7">
-                <ListDetails total={list.total} date={list.date} />
+                <ListDetails items={list.items.length} total={list.total} date={list.date} />
             </div>
         </li>
     );

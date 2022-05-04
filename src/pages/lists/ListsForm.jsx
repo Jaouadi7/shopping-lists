@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -26,17 +26,11 @@ const ListsForm = ({ lists, setLists }) => {
       placeholder: '',
       label: 'Date to shopping',
       name: 'date',
-      classes: 'input is-medium',
+      classes: 'input is-medium ',
       errorMsg: 'Please select a date for shopping',
     }
   ]
 
-  // SET CHECKER TO HANDLE AND CHECK THE INPUTS ERROR ON BLUR AND FOCUESED EVENT
-  // TO DISPLAY ERRORS
-  const [checker, setChecker] = useState(false);
-
-  // CHANGE CHECKER VALUE FROM FALSE TO TRUE ON BLURE AND FOCUESED EVENTS
-  const handleChecker = (e) => setChecker(true);
 
   // PASSING THE FORM DATA
   const handleOnChange = (e) => setNewList({ ...newList, [e.target.name]: e.target.value });
@@ -62,6 +56,10 @@ const ListsForm = ({ lists, setLists }) => {
 
     document.querySelector('.create-list-form .submit-button').classList.add('is-loading'); // DISPLAY LOADING ICON
 
+    // SET CHECKER TO THE DEFAULT
+    const inputs = document.querySelectorAll('.create-list-form .input');
+    inputs.forEach(input => input.setAttribute('focused', 'false'));
+
     // ADD NEW LIST TO THE OTHER LISTS
     setLists([...lists, list]);
 
@@ -76,12 +74,25 @@ const ListsForm = ({ lists, setLists }) => {
         <div className="p-4">
           <form className='create-list-form is-flex is-align-items-stretch is-justify-content-center is-flex-direction-column'>
             {
-              formInputs.map(input => {
+              formInputs.map((input) => {
                 return (
                   <div key={input.id} className="field">
                     <div className="control">
                       <label htmlFor={input.name} className='label heading-5'>{input.label}</label>
-                      <input className={input.classes} type={input.type} name={input.name} id={input.name} placeholder={input.placeholder} onChange={handleOnChange} checked={input.checked} required pattern={input.pattern} value={newList[input.name]} onBlur={handleChecker} focused={checker.toString()} />
+                      <input
+                        className={input.classes}
+                        type={input.type}
+                        name={input.name}
+                        id={input.name}
+                        placeholder={input.placeholder}
+                        onChange={handleOnChange}
+                        required
+                        pattern={input.pattern}
+                        value={newList[input.name]}
+                        onBlur={(e) => {
+                          e.target.attributes.focused.value = true
+                        }}
+                        focused="false" />
                       <small className='errorMsg has-text-danger'>{input.errorMsg}</small>
                     </div>
                   </div>

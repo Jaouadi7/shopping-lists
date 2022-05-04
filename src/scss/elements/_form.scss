@@ -24,4 +24,29 @@ input:invalid[focused=true] {
 
 input:invalid[focused=true] ~ small.errorMsg {
     display: block;
-} 
+}
+
+.items-form {
+
+    .field {
+        .control {
+            position: relative;
+            .label {
+                position: absolute;
+                top: -10px;
+                left: 15px;
+                z-index: 1;
+                font-size: 13px;
+                background: #fff;
+                padding-inline: 10px;
+            }
+        }
+    }
+
+    .w-50{
+        width: 48%;
+        display: inline-flex;
+        margin-right: 2%;
+    }
+
+}
