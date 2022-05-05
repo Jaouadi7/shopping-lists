@@ -3,10 +3,10 @@ import Header from "./content/Header";
 import { ImSad, ImBin } from "react-icons/im"
 import { useState } from "react";
 
-
 const ItemsForm = ({ lists, setLists }) => {
 
   const { id } = useParams();
+
   const navigate = useNavigate();
 
   const activeList = lists.filter((list) => Number(id) === list.id);
@@ -99,6 +99,19 @@ const ItemsForm = ({ lists, setLists }) => {
   const backHomePage = () => navigate(`/`);
 
 
+  // DELETE ITEM
+  const deleteItem = (itemID) => {
+
+    // FILTER ITEMS: SELECT ITEM BY INDEX 
+    const selectedItem = activeList[0].items.findIndex(item => (item.id !== itemID))
+    // REMOVE SELECTED ITEM FORM  ITEMS OBJ
+    activeList[0].items.splice(selectedItem, 1);
+    // UPDATE LISTS
+    setLists([...lists]);
+
+  }
+
+
   return (
     <div className="shopping-lists_items">
       {
@@ -122,7 +135,7 @@ const ItemsForm = ({ lists, setLists }) => {
                               <h2 className="shopping-list_heading heading-5">{item.name} ( x {item.quantity} )</h2>
 
                               <div className="shopping-list_control">
-                                <span className="icon delete-item ">
+                                <span className="icon delete-item" onClick={() => deleteItem(item.id)}>
                                   <ImBin />
                                 </span>
                               </div>
@@ -158,6 +171,7 @@ const ItemsForm = ({ lists, setLists }) => {
                                 e.target.attributes.focused.value = true
                               }}
                               focused="false"
+                              autoComplete='false'
                               required={input.isRequired}
                             />
                             <small className="errorMsg help is-danger mb-1 ">{input.errorMsg}</small>

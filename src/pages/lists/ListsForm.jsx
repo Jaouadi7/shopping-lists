@@ -92,7 +92,8 @@ const ListsForm = ({ lists, setLists }) => {
                         onBlur={(e) => {
                           e.target.attributes.focused.value = true
                         }}
-                        focused="false" />
+                        focused="false"
+                        autoComplete='false' />
                       <small className='errorMsg has-text-danger'>{input.errorMsg}</small>
                     </div>
                   </div>

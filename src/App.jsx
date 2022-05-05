@@ -4,7 +4,7 @@ import Lists from './pages/lists/Lists'; // SHOPPING LISTS  COMPONENT TO DISPLAY
 import Welcome from './pages/no-lists/Welcome'; // DISPLAY WELCOME COMPONENT PAGE WHEN WE WILL NOT HAVE SHOPPING LISTS
 
 // ---------------  APP COMPONENT ---------------- //
-const App = ({ shoppingLists }) => {
+const App = ({ shoppingLists, setLists }) => {
 
     return (
         <div id="shopping-list_application">
@@ -13,7 +13,7 @@ const App = ({ shoppingLists }) => {
                     shoppingLists.length > 0 ? (
                         <>
                             <Header shoppingListsCounter={shoppingLists.length} />
-                            <Lists lists={shoppingLists} />
+                            <Lists lists={shoppingLists} setLists={setLists} />
                         </>
                     ) :
                         <Welcome />
