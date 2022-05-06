@@ -1,5 +1,6 @@
 .lists {
-    min-height: 63vh;
+    height: 63vh;
+    overflow-y: scroll;
 
     .shopping-list_item {
         .isCompleted.false {

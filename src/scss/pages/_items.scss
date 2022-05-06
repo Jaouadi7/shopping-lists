@@ -1,5 +1,7 @@
 .shopping-lists_items {
     .display-shopping-items {
         height: 64vh;
+        overflow-y: scroll;
+
     }
 }

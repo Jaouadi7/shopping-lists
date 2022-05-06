@@ -19,6 +19,10 @@ html {
         overflow: hidden;
         font-family: $mainFont;
         
-       
+       #root {
+            max-width: 420px;
+            margin: auto;
+            border: 1px solid #ddd;
+       }
     }
 }

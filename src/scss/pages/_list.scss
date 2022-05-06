@@ -1,5 +1,7 @@
 .list {
     height: 90vh;
+    overflow-y: scroll;
+
 
     .shopping-list_item {
         .shopping-list_control {
