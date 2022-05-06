@@ -1,13 +1,16 @@
-# Shopping Lists 
+# 🧾  Shopping Lists | Simple React App
+
 
 Build a simple React web app to create and organise your shopping and make it more easier.
 
-## Screenshots
+## 📷 Screenshots
 ![React Shopping Lists](https://github.com/Jaouadi7/shopping-lists/blob/main/screenshot.jpg)
 
-## Contributions are welcome
+## ✌️ Preview
 
-## Available Scripts:  
+You can access the demo [here](shopping-lists-app.netlify.app). Shopping Lists is built with [Bulma](https://bulma.io) and [React](https://reactjs.org).
+
+## ✅ Available Scripts:  
 
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
 
@@ -27,7 +30,7 @@ To Visit App:
 
 `localhost:3000/ideas` 
 
-## Contact Me
+## 📞  Contact Me
 
 <a href = 'https://www.linkedin.com/in/eljaouadi'>
   <img width = '32px' align= 'center' src="https://github.com/Jaouadi7/Jaouadi7/blob/main/linkedin.png"/>
