@@ -1,7 +1,6 @@
 # 🧾  Shopping Lists | Simple React App
 
-
-Build a simple React web app to create and organise your shopping and make it more easier.
+Built this a simple shopping lists app to organize your shopping and make it easier.
 
 ## 📷 Screenshots
 ![React Shopping Lists](https://github.com/Jaouadi7/shopping-lists/blob/main/screenshot.jpg)
