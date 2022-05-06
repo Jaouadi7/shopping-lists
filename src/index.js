@@ -31,7 +31,10 @@ const ShoppingListsApplication = () => {
             path="creat-shoping-list"
             element={<ListsForm lists={lists} setLists={setLists} />}
           />
-          <Route path="list/:id" element={<List shoppingLists={lists} />} />
+          <Route
+            path="list/:id"
+            element={<List shoppingLists={lists} setLists={setLists} />}
+          />
           <Route
             path="list/:id/add-shopping-items"
             element={<ItemsForm lists={lists} setLists={setLists} />}

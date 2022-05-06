@@ -12,7 +12,7 @@ const Lists = ({ lists, setLists }) => {
           </div>
         </div>
       </ul>
-      <Stats />
+      <Stats lists={lists} />
     </>
 
   )

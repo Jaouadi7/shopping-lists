@@ -4,12 +4,18 @@ import ListControl from './content/ListControl';
 import ListPrice from './content/ListPrice';
 import ListTitle from './content/ListTitle';
 
-const List = ({ shoppingLists }) => {
+const List = ({ shoppingLists, setLists }) => {
 
   const { id } = useParams(); // GET SHOPPING LIST ID
   const navigate = useNavigate(); // TO NAVIGATE APP PAGES
   const currentList = shoppingLists.filter(list => (list.id === Number(id))) // FILTERING DATA TO SORT THE ACTIVE SHOPPING LIST BY ID
   const backHomePage = () => navigate('/');   // BACK HOMEPAGE FUNCTION
+
+  const toggleIsBought = (itemID) => {
+    // TOGGLE BOOLEN isBought
+    currentList[0].items.map(item => item.id === itemID && (item.isBought = !item.isBought))
+    setLists([...shoppingLists]);
+  }
 
   return (
     <>
@@ -24,7 +30,7 @@ const List = ({ shoppingLists }) => {
                     <li key={list.id} className={`shopping-list_item mb-4 pb-3 ${list.isBought && 'completed'}`} >
                       <div className="shopping-list_header is-flex is-justify-content-space-between is-align-items-baseline">
                         <ListTitle name={list.name} quantity={list.quantity} />
-                        <ListControl />
+                        <ListControl toggleIsBought={() => toggleIsBought(list.id)} />
                       </div>
                       <ListPrice price={list.price} />
                     </li>

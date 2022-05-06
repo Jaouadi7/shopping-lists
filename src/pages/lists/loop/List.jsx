@@ -20,8 +20,6 @@ const List = ({ list, lists, setLists }) => {
         setLists(lists.map(ls => ls.id === list.id ? { ...ls, total: getTotals } : ls))
     }, [])
 
-
-
     return (
         <li className={`shopping-list_item mb-4 pb-3 ${list.isCompleted && 'completed'}`}>
             <div className="shopping-list_header is-flex is-justify-content-space-between is-align-items-baseline">

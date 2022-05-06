@@ -38,7 +38,7 @@ const ItemsForm = ({ lists, setLists }) => {
       placeholder: '',
       isRequired: true,
       type: 'text',
-      pattern: '^[0-9]{1,}$',
+      pattern: '^[0-9.]{1,}$',
       errorMsg: '* Price value should be a valid number',
       classes: 'input is-medium',
       isExpended: false
