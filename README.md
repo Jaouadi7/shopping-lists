@@ -7,7 +7,7 @@ Built this a simple shopping lists app to organize your shopping and make it eas
 
 ## ✌️ Preview
 
-You can access the demo [here](shopping-lists-app.netlify.app). Shopping Lists is built with [Bulma](https://bulma.io) and [React](https://reactjs.org).
+You can access the demo [here](https://shopping-lists-app.netlify.app). Shopping Lists is built with [Bulma](https://bulma.io) and [React](https://reactjs.org).
 
 ## ✅ Available Scripts:  
 
