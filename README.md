@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Shopping Lists 
+
+Build a simple React web app to create and organise your shopping and make it more easier.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
