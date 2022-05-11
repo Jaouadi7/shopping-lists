@@ -27,19 +27,8 @@ To Start Server:
 
 To Visit App:
 
-`localhost:3000/ideas` 
+`localhost:3000` 
 
-## 📞  Contact Me
-
-<a href = 'https://www.linkedin.com/in/eljaouadi'>
-  <img width = '32px' align= 'center' src="https://github.com/Jaouadi7/Jaouadi7/blob/main/linkedin.png"/>
-</a> 
-<a href = 'https://web.facebook.com/Eljaouadi7/'>
-  <img width = '32px' align= 'center' src="https://github.com/Jaouadi7/Jaouadi7/blob/main/facebook%20(1).png"/>
-</a>
-<a href = 'https://wa.me/00212621058205'>
-  <img width = '32px' align= 'center' src="https://github.com/Jaouadi7/Jaouadi7/blob/main/whatsapp.png"/>
-</a>
 
 
 
